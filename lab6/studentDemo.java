@@ -2,6 +2,7 @@ import java.util.Scanner;
 class student{
   int id_no;
   int no_of_subjects;
+  String name_of_subject[]= new String[10];
   String subject_code[]= new String[10];
   double subject_credits[]= new double[10];
   String grade_obtained[]= new String[10];
@@ -20,11 +21,13 @@ class student{
       no_of_subjects=sc.nextInt();
 
       for(int i=0;i<no_of_subjects;i++){
-        System.out.print("Enter"+(i+1)+"Subject Code : ");
+        System.out.print("Enter" + (i+1) +"name of Subject  : ");
         subject_code[i]=sc.next();
-        System.out.print("Enter"+(i+1)+"Subject Credit : ");
+        System.out.print("Enter" + (i+1) +"Subject Code : ");
+        subject_code[i]=sc.next();
+        System.out.print("Enter" + (i+1) +"Subject Credit : ");
         subject_credits[i]=sc.nextDouble();
-        System.out.print("Enter"+(i+1)+"Subject's Grad : ");
+        System.out.print("Enter" + (i+1) +"Subject's Grad : ");
         grade_obtained[i]=sc.next();
       }
 
@@ -35,6 +38,8 @@ class student{
       System.out.println("id no = "+id_no);
       int n=no_of_subjects;
       for(int i=0;i<n;i++){
+        System.out.println("subject name = "+name_of_subject[i]);
+        System.out.println("");
         System.out.println("subject code = "+subject_code[i]);
         System.out.println("");
         System.out.println("subject credit = "+subject_credits[i]);
