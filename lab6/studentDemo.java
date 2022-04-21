@@ -47,7 +47,7 @@ class student{
     void spi(){
       int n=no_of_subjects;
       for(int i=0;i<n;i++){
-        if(grade_obtained[i].equalsIgnoreCase("aa"))
+        if(grade_obtained[i].equalsIgnoreCase("a+"))
         {
           total[i]=10*subject_credits[i];
         }
@@ -55,7 +55,7 @@ class student{
         {
           total[i]=9*subject_credits[i];
         }
-        else if(grade_obtained[i].equalsIgnoreCase("bb"))
+        else if(grade_obtained[i].equalsIgnoreCase("b+"))
         {
           total[i]=8*subject_credits[i];
         }
@@ -63,7 +63,7 @@ class student{
         {
           total[i]=7*subject_credits[i];
         }
-        else if(grade_obtained[i].equalsIgnoreCase("cc"))
+        else if(grade_obtained[i].equalsIgnoreCase("c+"))
         {
           total[i]=6*subject_credits[i];
         }
@@ -71,7 +71,7 @@ class student{
         {
           total[i]=5*subject_credits[i];
         }
-        else if(grade_obtained[i].equalsIgnoreCase("dd"))
+        else if(grade_obtained[i].equalsIgnoreCase("d+"))
         {
           total[i]=4*subject_credits[i];
         }
